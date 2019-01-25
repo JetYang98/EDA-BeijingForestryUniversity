@@ -1,0 +1,4 @@
+set tool_name "ModelSim-Altera (VHDL)"
+set corner_file_list {
+	{{"Slow Model"} {jk_trigger.vho jk_trigger_vhd.sdo}}
+}

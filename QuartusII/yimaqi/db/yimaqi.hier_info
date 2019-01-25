@@ -1,0 +1,19 @@
+|yimaqi
+a => Mux3.IN4
+a => Mux2.IN4
+a => Mux1.IN4
+a => Mux0.IN4
+b => Mux3.IN5
+b => Mux2.IN5
+b => Mux1.IN5
+b => Mux0.IN5
+ena => y~3.OUTPUTSELECT
+ena => y~2.OUTPUTSELECT
+ena => y~1.OUTPUTSELECT
+ena => y~0.OUTPUTSELECT
+y[0] <= y~3.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y~1.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

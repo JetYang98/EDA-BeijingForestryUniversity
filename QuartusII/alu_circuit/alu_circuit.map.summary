@@ -1,0 +1,15 @@
+Analysis & Synthesis Status : Successful - Thu May 24 11:03:27 2018
+Quartus II Version : 9.0 Build 132 02/25/2009 SJ Full Version
+Revision Name : alu_circuit
+Top-level Entity Name : alu_circuit
+Family : Stratix II
+Logic utilization : N/A
+    Combinational ALUTs : 17
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 27
+Total virtual pins : 0
+Total block memory bits : 0
+DSP block 9-bit elements : 0
+Total PLLs : 0
+Total DLLs : 0

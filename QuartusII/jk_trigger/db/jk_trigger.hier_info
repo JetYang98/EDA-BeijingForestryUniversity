@@ -1,0 +1,15 @@
+|jk_trigger
+j => Mux1.IN3
+j => Mux0.IN3
+k => Mux1.IN4
+k => Mux0.IN4
+clr => q~0.IN1
+clr => q~reg0.ACLR
+clr => qn~reg0.PRESET
+cls => q~0.IN0
+clk => q~reg0.CLK
+clk => qn~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+qn <= qn~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

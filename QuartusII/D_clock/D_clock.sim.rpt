@@ -1,0 +1,574 @@
+Simulator report for D_clock
+Thu May 31 11:37:31 2018
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 50.0 us      ;
+; Simulation Netlist Size     ; 206 nodes    ;
+; Simulation Coverage         ;      19.21 % ;
+; Total Number of Transitions ; 21926        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
+; Device                      ; EP2S15F484C3 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      19.21 % ;
+; Total nodes checked                                 ; 206          ;
+; Total output ports checked                          ; 229          ;
+; Total output ports with complete 1/0-value coverage ; 44           ;
+; Total output ports with no 1/0-value coverage       ; 184          ;
+; Total output ports with no 1-value coverage         ; 184          ;
+; Total output ports with no 0-value coverage         ; 185          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                ;
++------------------------------------+------------------------------------+------------------+
+; Node Name                          ; Output Port Name                   ; Output Port Type ;
++------------------------------------+------------------------------------+------------------+
+; |D_clock|divided:inst4|CNT[8]      ; |D_clock|divided:inst4|CNT[8]      ; regout           ;
+; |D_clock|divided:inst4|CNT[7]      ; |D_clock|divided:inst4|CNT[7]      ; regout           ;
+; |D_clock|divided:inst4|CNT[6]      ; |D_clock|divided:inst4|CNT[6]      ; regout           ;
+; |D_clock|divided:inst4|CNT[5]      ; |D_clock|divided:inst4|CNT[5]      ; regout           ;
+; |D_clock|divided:inst4|CNT[4]      ; |D_clock|divided:inst4|CNT[4]      ; regout           ;
+; |D_clock|divided:inst4|CNT[3]      ; |D_clock|divided:inst4|CNT[3]      ; regout           ;
+; |D_clock|divided:inst4|CNT[2]      ; |D_clock|divided:inst4|CNT[2]      ; regout           ;
+; |D_clock|divided:inst4|CNT[1]      ; |D_clock|divided:inst4|CNT[1]      ; regout           ;
+; |D_clock|divided:inst4|op_1~1      ; |D_clock|divided:inst4|op_1~1      ; sumout           ;
+; |D_clock|divided:inst4|op_1~1      ; |D_clock|divided:inst4|op_1~2      ; cout             ;
+; |D_clock|divided:inst4|op_1~5      ; |D_clock|divided:inst4|op_1~5      ; sumout           ;
+; |D_clock|divided:inst4|op_1~5      ; |D_clock|divided:inst4|op_1~6      ; cout             ;
+; |D_clock|divided:inst4|op_1~9      ; |D_clock|divided:inst4|op_1~9      ; sumout           ;
+; |D_clock|divided:inst4|op_1~9      ; |D_clock|divided:inst4|op_1~10     ; cout             ;
+; |D_clock|divided:inst4|op_1~13     ; |D_clock|divided:inst4|op_1~13     ; sumout           ;
+; |D_clock|divided:inst4|op_1~13     ; |D_clock|divided:inst4|op_1~14     ; cout             ;
+; |D_clock|divided:inst4|op_1~17     ; |D_clock|divided:inst4|op_1~17     ; sumout           ;
+; |D_clock|divided:inst4|op_1~17     ; |D_clock|divided:inst4|op_1~18     ; cout             ;
+; |D_clock|divided:inst4|op_1~21     ; |D_clock|divided:inst4|op_1~21     ; sumout           ;
+; |D_clock|divided:inst4|op_1~21     ; |D_clock|divided:inst4|op_1~22     ; cout             ;
+; |D_clock|divided:inst4|op_1~25     ; |D_clock|divided:inst4|op_1~25     ; sumout           ;
+; |D_clock|divided:inst4|op_1~25     ; |D_clock|divided:inst4|op_1~26     ; cout             ;
+; |D_clock|divided:inst4|op_1~29     ; |D_clock|divided:inst4|op_1~29     ; sumout           ;
+; |D_clock|divided:inst4|op_1~29     ; |D_clock|divided:inst4|op_1~30     ; cout             ;
+; |D_clock|divided:inst4|op_1~33     ; |D_clock|divided:inst4|op_1~33     ; sumout           ;
+; |D_clock|divided:inst4|op_1~33     ; |D_clock|divided:inst4|op_1~34     ; cout             ;
+; |D_clock|divided:inst4|CNT[0]      ; |D_clock|divided:inst4|CNT[0]      ; regout           ;
+; |D_clock|demulti4_1:inst3|MB[0]~9  ; |D_clock|demulti4_1:inst3|MB[0]~9  ; combout          ;
+; |D_clock|cout60_v:inst1|tmpb~14    ; |D_clock|cout60_v:inst1|tmpb~14    ; combout          ;
+; |D_clock|demulti4_1:inst3|SB[0]~9  ; |D_clock|demulti4_1:inst3|SB[0]~9  ; combout          ;
+; |D_clock|demulti4_1:inst3|SA[0]~12 ; |D_clock|demulti4_1:inst3|SA[0]~12 ; combout          ;
+; |D_clock|demulti4_1:inst3|MA[0]~20 ; |D_clock|demulti4_1:inst3|MA[0]~20 ; combout          ;
+; |D_clock|demulti4_1:inst3|MA[0]~21 ; |D_clock|demulti4_1:inst3|MA[0]~21 ; combout          ;
+; |D_clock|cout12_v:inst|tmpb~4      ; |D_clock|cout12_v:inst|tmpb~4      ; combout          ;
+; |D_clock|divided:inst4|CNT[0]~25   ; |D_clock|divided:inst4|CNT[0]~25   ; combout          ;
+; |D_clock|S[2]                      ; |D_clock|S[2]~corein               ; combout          ;
+; |D_clock|S[0]                      ; |D_clock|S[0]~corein               ; combout          ;
+; |D_clock|I[0]                      ; |D_clock|I[0]~corein               ; combout          ;
+; |D_clock|S[1]                      ; |D_clock|S[1]~corein               ; combout          ;
+; |D_clock|I[1]                      ; |D_clock|I[1]~corein               ; combout          ;
+; |D_clock|I[2]                      ; |D_clock|I[2]~corein               ; combout          ;
+; |D_clock|I[3]                      ; |D_clock|I[3]~corein               ; combout          ;
+; |D_clock|CLK                       ; |D_clock|CLK~corein                ; combout          ;
+; |D_clock|CLK~clkctrl               ; |D_clock|CLK~clkctrl               ; outclk           ;
++------------------------------------+------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                 ;
++-------------------------------------------+-------------------------------------------+------------------+
+; Node Name                                 ; Output Port Name                          ; Output Port Type ;
++-------------------------------------------+-------------------------------------------+------------------+
+; |D_clock|cout60_v:inst1|tmpa[0]           ; |D_clock|cout60_v:inst1|tmpa[0]           ; regout           ;
+; |D_clock|cout60_v:inst1|tmpb[0]           ; |D_clock|cout60_v:inst1|tmpb[0]           ; regout           ;
+; |D_clock|cout60_v:inst2|tmpa[0]           ; |D_clock|cout60_v:inst2|tmpa[0]           ; regout           ;
+; |D_clock|cout60_v:inst2|tmpb[0]           ; |D_clock|cout60_v:inst2|tmpb[0]           ; regout           ;
+; |D_clock|divided:inst4|CNT[24]            ; |D_clock|divided:inst4|CNT[24]            ; regout           ;
+; |D_clock|divided:inst4|CNT[23]            ; |D_clock|divided:inst4|CNT[23]            ; regout           ;
+; |D_clock|divided:inst4|CNT[22]            ; |D_clock|divided:inst4|CNT[22]            ; regout           ;
+; |D_clock|divided:inst4|CNT[21]            ; |D_clock|divided:inst4|CNT[21]            ; regout           ;
+; |D_clock|divided:inst4|CNT[20]            ; |D_clock|divided:inst4|CNT[20]            ; regout           ;
+; |D_clock|divided:inst4|CNT[19]            ; |D_clock|divided:inst4|CNT[19]            ; regout           ;
+; |D_clock|divided:inst4|CNT[18]            ; |D_clock|divided:inst4|CNT[18]            ; regout           ;
+; |D_clock|divided:inst4|CNT[17]            ; |D_clock|divided:inst4|CNT[17]            ; regout           ;
+; |D_clock|divided:inst4|CNT[16]            ; |D_clock|divided:inst4|CNT[16]            ; regout           ;
+; |D_clock|divided:inst4|CNT[15]            ; |D_clock|divided:inst4|CNT[15]            ; regout           ;
+; |D_clock|divided:inst4|CNT[14]            ; |D_clock|divided:inst4|CNT[14]            ; regout           ;
+; |D_clock|divided:inst4|CNT[13]            ; |D_clock|divided:inst4|CNT[13]            ; regout           ;
+; |D_clock|divided:inst4|CNT[12]            ; |D_clock|divided:inst4|CNT[12]            ; regout           ;
+; |D_clock|divided:inst4|CNT[11]            ; |D_clock|divided:inst4|CNT[11]            ; regout           ;
+; |D_clock|divided:inst4|CNT[10]            ; |D_clock|divided:inst4|CNT[10]            ; regout           ;
+; |D_clock|divided:inst4|op_1~37            ; |D_clock|divided:inst4|op_1~37            ; sumout           ;
+; |D_clock|divided:inst4|op_1~37            ; |D_clock|divided:inst4|op_1~38            ; cout             ;
+; |D_clock|divided:inst4|op_1~41            ; |D_clock|divided:inst4|op_1~41            ; sumout           ;
+; |D_clock|divided:inst4|op_1~41            ; |D_clock|divided:inst4|op_1~42            ; cout             ;
+; |D_clock|divided:inst4|op_1~45            ; |D_clock|divided:inst4|op_1~45            ; sumout           ;
+; |D_clock|divided:inst4|op_1~45            ; |D_clock|divided:inst4|op_1~46            ; cout             ;
+; |D_clock|divided:inst4|op_1~49            ; |D_clock|divided:inst4|op_1~49            ; sumout           ;
+; |D_clock|divided:inst4|op_1~49            ; |D_clock|divided:inst4|op_1~50            ; cout             ;
+; |D_clock|divided:inst4|op_1~53            ; |D_clock|divided:inst4|op_1~53            ; sumout           ;
+; |D_clock|divided:inst4|op_1~53            ; |D_clock|divided:inst4|op_1~54            ; cout             ;
+; |D_clock|divided:inst4|op_1~57            ; |D_clock|divided:inst4|op_1~57            ; sumout           ;
+; |D_clock|divided:inst4|op_1~57            ; |D_clock|divided:inst4|op_1~58            ; cout             ;
+; |D_clock|divided:inst4|op_1~61            ; |D_clock|divided:inst4|op_1~61            ; sumout           ;
+; |D_clock|divided:inst4|op_1~61            ; |D_clock|divided:inst4|op_1~62            ; cout             ;
+; |D_clock|divided:inst4|op_1~65            ; |D_clock|divided:inst4|op_1~65            ; sumout           ;
+; |D_clock|divided:inst4|op_1~65            ; |D_clock|divided:inst4|op_1~66            ; cout             ;
+; |D_clock|divided:inst4|op_1~69            ; |D_clock|divided:inst4|op_1~69            ; sumout           ;
+; |D_clock|divided:inst4|op_1~69            ; |D_clock|divided:inst4|op_1~70            ; cout             ;
+; |D_clock|divided:inst4|op_1~73            ; |D_clock|divided:inst4|op_1~73            ; sumout           ;
+; |D_clock|divided:inst4|op_1~73            ; |D_clock|divided:inst4|op_1~74            ; cout             ;
+; |D_clock|divided:inst4|op_1~77            ; |D_clock|divided:inst4|op_1~77            ; sumout           ;
+; |D_clock|divided:inst4|op_1~77            ; |D_clock|divided:inst4|op_1~78            ; cout             ;
+; |D_clock|divided:inst4|op_1~81            ; |D_clock|divided:inst4|op_1~81            ; sumout           ;
+; |D_clock|divided:inst4|op_1~81            ; |D_clock|divided:inst4|op_1~82            ; cout             ;
+; |D_clock|divided:inst4|op_1~85            ; |D_clock|divided:inst4|op_1~85            ; sumout           ;
+; |D_clock|divided:inst4|op_1~85            ; |D_clock|divided:inst4|op_1~86            ; cout             ;
+; |D_clock|divided:inst4|op_1~89            ; |D_clock|divided:inst4|op_1~89            ; sumout           ;
+; |D_clock|divided:inst4|op_1~89            ; |D_clock|divided:inst4|op_1~90            ; cout             ;
+; |D_clock|divided:inst4|op_1~93            ; |D_clock|divided:inst4|op_1~93            ; sumout           ;
+; |D_clock|cout60_v:inst1|tmpa~16           ; |D_clock|cout60_v:inst1|tmpa~16           ; combout          ;
+; |D_clock|cout12_v:inst|tmpa[0]            ; |D_clock|cout12_v:inst|tmpa[0]            ; regout           ;
+; |D_clock|cout12_v:inst|tmpa[1]            ; |D_clock|cout12_v:inst|tmpa[1]            ; regout           ;
+; |D_clock|cout12_v:inst|tmpa[2]            ; |D_clock|cout12_v:inst|tmpa[2]            ; regout           ;
+; |D_clock|cout12_v:inst|tmpa[3]            ; |D_clock|cout12_v:inst|tmpa[3]            ; regout           ;
+; |D_clock|seven_v:inst9|Mux0~5             ; |D_clock|seven_v:inst9|Mux0~5             ; combout          ;
+; |D_clock|seven_v:inst9|Mux1~6             ; |D_clock|seven_v:inst9|Mux1~6             ; combout          ;
+; |D_clock|seven_v:inst9|Mux2~6             ; |D_clock|seven_v:inst9|Mux2~6             ; combout          ;
+; |D_clock|seven_v:inst9|Mux3~6             ; |D_clock|seven_v:inst9|Mux3~6             ; combout          ;
+; |D_clock|seven_v:inst9|Mux4~6             ; |D_clock|seven_v:inst9|Mux4~6             ; combout          ;
+; |D_clock|seven_v:inst9|Mux5~0             ; |D_clock|seven_v:inst9|Mux5~0             ; combout          ;
+; |D_clock|seven_v:inst9|Mux6~6             ; |D_clock|seven_v:inst9|Mux6~6             ; combout          ;
+; |D_clock|cout12_v:inst|tmpb               ; |D_clock|cout12_v:inst|tmpb               ; regout           ;
+; |D_clock|cout60_v:inst1|tmpa[1]           ; |D_clock|cout60_v:inst1|tmpa[1]           ; regout           ;
+; |D_clock|cout60_v:inst1|tmpa[2]           ; |D_clock|cout60_v:inst1|tmpa[2]           ; regout           ;
+; |D_clock|cout60_v:inst1|tmpa[3]           ; |D_clock|cout60_v:inst1|tmpa[3]           ; regout           ;
+; |D_clock|seven_v:inst7|Mux0~5             ; |D_clock|seven_v:inst7|Mux0~5             ; combout          ;
+; |D_clock|seven_v:inst7|Mux1~6             ; |D_clock|seven_v:inst7|Mux1~6             ; combout          ;
+; |D_clock|seven_v:inst7|Mux2~6             ; |D_clock|seven_v:inst7|Mux2~6             ; combout          ;
+; |D_clock|seven_v:inst7|Mux3~6             ; |D_clock|seven_v:inst7|Mux3~6             ; combout          ;
+; |D_clock|seven_v:inst7|Mux4~6             ; |D_clock|seven_v:inst7|Mux4~6             ; combout          ;
+; |D_clock|seven_v:inst7|Mux5~0             ; |D_clock|seven_v:inst7|Mux5~0             ; combout          ;
+; |D_clock|seven_v:inst7|Mux6~6             ; |D_clock|seven_v:inst7|Mux6~6             ; combout          ;
+; |D_clock|cout60_v:inst1|tmpb[1]           ; |D_clock|cout60_v:inst1|tmpb[1]           ; regout           ;
+; |D_clock|cout60_v:inst1|tmpb[2]           ; |D_clock|cout60_v:inst1|tmpb[2]           ; regout           ;
+; |D_clock|seven_v:inst8|Mux0~5             ; |D_clock|seven_v:inst8|Mux0~5             ; combout          ;
+; |D_clock|seven_v:inst8|Mux1~6             ; |D_clock|seven_v:inst8|Mux1~6             ; combout          ;
+; |D_clock|seven_v:inst8|Mux2~6             ; |D_clock|seven_v:inst8|Mux2~6             ; combout          ;
+; |D_clock|seven_v:inst8|Mux3~6             ; |D_clock|seven_v:inst8|Mux3~6             ; combout          ;
+; |D_clock|seven_v:inst8|Mux4~6             ; |D_clock|seven_v:inst8|Mux4~6             ; combout          ;
+; |D_clock|seven_v:inst8|Mux5~0             ; |D_clock|seven_v:inst8|Mux5~0             ; combout          ;
+; |D_clock|seven_v:inst8|Mux6~6             ; |D_clock|seven_v:inst8|Mux6~6             ; combout          ;
+; |D_clock|cout60_v:inst2|tmpa[1]           ; |D_clock|cout60_v:inst2|tmpa[1]           ; regout           ;
+; |D_clock|cout60_v:inst2|tmpa[2]           ; |D_clock|cout60_v:inst2|tmpa[2]           ; regout           ;
+; |D_clock|cout60_v:inst2|tmpa[3]           ; |D_clock|cout60_v:inst2|tmpa[3]           ; regout           ;
+; |D_clock|seven_v:inst5|Mux0~5             ; |D_clock|seven_v:inst5|Mux0~5             ; combout          ;
+; |D_clock|seven_v:inst5|Mux1~6             ; |D_clock|seven_v:inst5|Mux1~6             ; combout          ;
+; |D_clock|seven_v:inst5|Mux2~6             ; |D_clock|seven_v:inst5|Mux2~6             ; combout          ;
+; |D_clock|seven_v:inst5|Mux3~6             ; |D_clock|seven_v:inst5|Mux3~6             ; combout          ;
+; |D_clock|seven_v:inst5|Mux4~6             ; |D_clock|seven_v:inst5|Mux4~6             ; combout          ;
+; |D_clock|seven_v:inst5|Mux5~0             ; |D_clock|seven_v:inst5|Mux5~0             ; combout          ;
+; |D_clock|seven_v:inst5|Mux6~6             ; |D_clock|seven_v:inst5|Mux6~6             ; combout          ;
+; |D_clock|cout60_v:inst2|tmpb[1]           ; |D_clock|cout60_v:inst2|tmpb[1]           ; regout           ;
+; |D_clock|cout60_v:inst2|tmpb[2]           ; |D_clock|cout60_v:inst2|tmpb[2]           ; regout           ;
+; |D_clock|seven_v:inst6|Mux0~5             ; |D_clock|seven_v:inst6|Mux0~5             ; combout          ;
+; |D_clock|seven_v:inst6|Mux1~6             ; |D_clock|seven_v:inst6|Mux1~6             ; combout          ;
+; |D_clock|seven_v:inst6|Mux2~6             ; |D_clock|seven_v:inst6|Mux2~6             ; combout          ;
+; |D_clock|seven_v:inst6|Mux3~6             ; |D_clock|seven_v:inst6|Mux3~6             ; combout          ;
+; |D_clock|seven_v:inst6|Mux4~6             ; |D_clock|seven_v:inst6|Mux4~6             ; combout          ;
+; |D_clock|seven_v:inst6|Mux5~0             ; |D_clock|seven_v:inst6|Mux5~0             ; combout          ;
+; |D_clock|seven_v:inst6|Mux6~6             ; |D_clock|seven_v:inst6|Mux6~6             ; combout          ;
+; |D_clock|cout60_v:inst2|tmpa~12           ; |D_clock|cout60_v:inst2|tmpa~12           ; combout          ;
+; |D_clock|cout60_v:inst2|tmpa[2]~13        ; |D_clock|cout60_v:inst2|tmpa[2]~13        ; combout          ;
+; |D_clock|cout60_v:inst2|tmpa~14           ; |D_clock|cout60_v:inst2|tmpa~14           ; combout          ;
+; |D_clock|cout60_v:inst2|tmpa~15           ; |D_clock|cout60_v:inst2|tmpa~15           ; combout          ;
+; |D_clock|cout60_v:inst2|Add1~0            ; |D_clock|cout60_v:inst2|Add1~0            ; combout          ;
+; |D_clock|cout60_v:inst2|tmpa~16           ; |D_clock|cout60_v:inst2|tmpa~16           ; combout          ;
+; |D_clock|cout60_v:inst2|tmpb~12           ; |D_clock|cout60_v:inst2|tmpb~12           ; combout          ;
+; |D_clock|cout60_v:inst2|tmpb~13           ; |D_clock|cout60_v:inst2|tmpb~13           ; combout          ;
+; |D_clock|cout60_v:inst2|tmpb[0]~14        ; |D_clock|cout60_v:inst2|tmpb[0]~14        ; combout          ;
+; |D_clock|cout60_v:inst2|tmpb~15           ; |D_clock|cout60_v:inst2|tmpb~15           ; combout          ;
+; |D_clock|cout60_v:inst2|tmpb~16           ; |D_clock|cout60_v:inst2|tmpb~16           ; combout          ;
+; |D_clock|cout60_v:inst1|tmpb~12           ; |D_clock|cout60_v:inst1|tmpb~12           ; combout          ;
+; |D_clock|cout60_v:inst1|tmpb~13           ; |D_clock|cout60_v:inst1|tmpb~13           ; combout          ;
+; |D_clock|cout60_v:inst1|tmpb~15           ; |D_clock|cout60_v:inst1|tmpb~15           ; combout          ;
+; |D_clock|cout60_v:inst2|RCO~4             ; |D_clock|cout60_v:inst2|RCO~4             ; combout          ;
+; |D_clock|cout60_v:inst1|tmpa[0]~12        ; |D_clock|cout60_v:inst1|tmpa[0]~12        ; combout          ;
+; |D_clock|cout60_v:inst1|tmpb[1]~16        ; |D_clock|cout60_v:inst1|tmpb[1]~16        ; combout          ;
+; |D_clock|cout60_v:inst1|tmpa~13           ; |D_clock|cout60_v:inst1|tmpa~13           ; combout          ;
+; |D_clock|cout60_v:inst1|tmpa~14           ; |D_clock|cout60_v:inst1|tmpa~14           ; combout          ;
+; |D_clock|cout60_v:inst1|tmpa[0]~15        ; |D_clock|cout60_v:inst1|tmpa[0]~15        ; combout          ;
+; |D_clock|cout60_v:inst1|RCO~4             ; |D_clock|cout60_v:inst1|RCO~4             ; combout          ;
+; |D_clock|cout12_v:inst|Equal0~0           ; |D_clock|cout12_v:inst|Equal0~0           ; combout          ;
+; |D_clock|cout12_v:inst|tmpb~5             ; |D_clock|cout12_v:inst|tmpb~5             ; combout          ;
+; |D_clock|cout12_v:inst|tmpa~16            ; |D_clock|cout12_v:inst|tmpa~16            ; combout          ;
+; |D_clock|cout12_v:inst|tmpa~17            ; |D_clock|cout12_v:inst|tmpa~17            ; combout          ;
+; |D_clock|cout12_v:inst|tmpa~18            ; |D_clock|cout12_v:inst|tmpa~18            ; combout          ;
+; |D_clock|cout12_v:inst|tmpa[0]~19         ; |D_clock|cout12_v:inst|tmpa[0]~19         ; combout          ;
+; |D_clock|divided:inst4|_~37               ; |D_clock|divided:inst4|_~37               ; combout          ;
+; |D_clock|divided:inst4|_~38               ; |D_clock|divided:inst4|_~38               ; combout          ;
+; |D_clock|divided:inst4|_~39               ; |D_clock|divided:inst4|_~39               ; combout          ;
+; |D_clock|divided:inst4|_~40               ; |D_clock|divided:inst4|_~40               ; combout          ;
+; |D_clock|divided:inst4|_~41               ; |D_clock|divided:inst4|_~41               ; combout          ;
+; |D_clock|divided:inst4|_~42               ; |D_clock|divided:inst4|_~42               ; combout          ;
+; |D_clock|cout12_v:inst|tmpa[0]~20         ; |D_clock|cout12_v:inst|tmpa[0]~20         ; combout          ;
+; |D_clock|cout12_v:inst|tmpa[1]~21         ; |D_clock|cout12_v:inst|tmpa[1]~21         ; combout          ;
+; |D_clock|cout60_v:inst1|tmpa[0]~_wirecell ; |D_clock|cout60_v:inst1|tmpa[0]~_wirecell ; combout          ;
+; |D_clock|cout60_v:inst1|tmpb[0]~_wirecell ; |D_clock|cout60_v:inst1|tmpb[0]~_wirecell ; combout          ;
+; |D_clock|cout60_v:inst2|tmpa[0]~_wirecell ; |D_clock|cout60_v:inst2|tmpa[0]~_wirecell ; combout          ;
+; |D_clock|cout60_v:inst2|tmpb[0]~_wirecell ; |D_clock|cout60_v:inst2|tmpb[0]~_wirecell ; combout          ;
+; |D_clock|QHa[0]                           ; |D_clock|QHa[0]                           ; padio            ;
+; |D_clock|QHa[1]                           ; |D_clock|QHa[1]                           ; padio            ;
+; |D_clock|QHa[2]                           ; |D_clock|QHa[2]                           ; padio            ;
+; |D_clock|QHa[3]                           ; |D_clock|QHa[3]                           ; padio            ;
+; |D_clock|QHa[4]                           ; |D_clock|QHa[4]                           ; padio            ;
+; |D_clock|QHa[5]                           ; |D_clock|QHa[5]                           ; padio            ;
+; |D_clock|QHa[6]                           ; |D_clock|QHa[6]                           ; padio            ;
+; |D_clock|QHb[0]                           ; |D_clock|QHb[0]                           ; padio            ;
+; |D_clock|QHb[1]                           ; |D_clock|QHb[1]                           ; padio            ;
+; |D_clock|QHb[2]                           ; |D_clock|QHb[2]                           ; padio            ;
+; |D_clock|QHb[3]                           ; |D_clock|QHb[3]                           ; padio            ;
+; |D_clock|QHb[4]                           ; |D_clock|QHb[4]                           ; padio            ;
+; |D_clock|QHb[5]                           ; |D_clock|QHb[5]                           ; padio            ;
+; |D_clock|QHb[6]                           ; |D_clock|QHb[6]                           ; padio            ;
+; |D_clock|QMa[0]                           ; |D_clock|QMa[0]                           ; padio            ;
+; |D_clock|QMa[1]                           ; |D_clock|QMa[1]                           ; padio            ;
+; |D_clock|QMa[2]                           ; |D_clock|QMa[2]                           ; padio            ;
+; |D_clock|QMa[3]                           ; |D_clock|QMa[3]                           ; padio            ;
+; |D_clock|QMa[4]                           ; |D_clock|QMa[4]                           ; padio            ;
+; |D_clock|QMa[5]                           ; |D_clock|QMa[5]                           ; padio            ;
+; |D_clock|QMa[6]                           ; |D_clock|QMa[6]                           ; padio            ;
+; |D_clock|QMb[0]                           ; |D_clock|QMb[0]                           ; padio            ;
+; |D_clock|QMb[1]                           ; |D_clock|QMb[1]                           ; padio            ;
+; |D_clock|QMb[2]                           ; |D_clock|QMb[2]                           ; padio            ;
+; |D_clock|QMb[3]                           ; |D_clock|QMb[3]                           ; padio            ;
+; |D_clock|QMb[4]                           ; |D_clock|QMb[4]                           ; padio            ;
+; |D_clock|QMb[5]                           ; |D_clock|QMb[5]                           ; padio            ;
+; |D_clock|QMb[6]                           ; |D_clock|QMb[6]                           ; padio            ;
+; |D_clock|QSa[0]                           ; |D_clock|QSa[0]                           ; padio            ;
+; |D_clock|QSa[1]                           ; |D_clock|QSa[1]                           ; padio            ;
+; |D_clock|QSa[2]                           ; |D_clock|QSa[2]                           ; padio            ;
+; |D_clock|QSa[3]                           ; |D_clock|QSa[3]                           ; padio            ;
+; |D_clock|QSa[4]                           ; |D_clock|QSa[4]                           ; padio            ;
+; |D_clock|QSa[5]                           ; |D_clock|QSa[5]                           ; padio            ;
+; |D_clock|QSa[6]                           ; |D_clock|QSa[6]                           ; padio            ;
+; |D_clock|QSb[0]                           ; |D_clock|QSb[0]                           ; padio            ;
+; |D_clock|QSb[1]                           ; |D_clock|QSb[1]                           ; padio            ;
+; |D_clock|QSb[2]                           ; |D_clock|QSb[2]                           ; padio            ;
+; |D_clock|QSb[3]                           ; |D_clock|QSb[3]                           ; padio            ;
+; |D_clock|QSb[4]                           ; |D_clock|QSb[4]                           ; padio            ;
+; |D_clock|QSb[5]                           ; |D_clock|QSb[5]                           ; padio            ;
+; |D_clock|QSb[6]                           ; |D_clock|QSb[6]                           ; padio            ;
+; |D_clock|LDN                              ; |D_clock|LDN~corein                       ; combout          ;
+; |D_clock|divided:inst4|CNT[24]~clkctrl    ; |D_clock|divided:inst4|CNT[24]~clkctrl    ; outclk           ;
+; |D_clock|cout60_v:inst1|tmpa~14DUPLICATE  ; |D_clock|cout60_v:inst1|tmpa~14DUPLICATE  ; combout          ;
+; |D_clock|cout60_v:inst1|tmpa[1]~DUPLICATE ; |D_clock|cout60_v:inst1|tmpa[1]~DUPLICATE ; regout           ;
++-------------------------------------------+-------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                 ;
++-------------------------------------------+-------------------------------------------+------------------+
+; Node Name                                 ; Output Port Name                          ; Output Port Type ;
++-------------------------------------------+-------------------------------------------+------------------+
+; |D_clock|cout60_v:inst1|tmpa[0]           ; |D_clock|cout60_v:inst1|tmpa[0]           ; regout           ;
+; |D_clock|cout60_v:inst1|tmpb[0]           ; |D_clock|cout60_v:inst1|tmpb[0]           ; regout           ;
+; |D_clock|cout60_v:inst2|tmpa[0]           ; |D_clock|cout60_v:inst2|tmpa[0]           ; regout           ;
+; |D_clock|cout60_v:inst2|tmpb[0]           ; |D_clock|cout60_v:inst2|tmpb[0]           ; regout           ;
+; |D_clock|divided:inst4|CNT[24]            ; |D_clock|divided:inst4|CNT[24]            ; regout           ;
+; |D_clock|divided:inst4|CNT[23]            ; |D_clock|divided:inst4|CNT[23]            ; regout           ;
+; |D_clock|divided:inst4|CNT[22]            ; |D_clock|divided:inst4|CNT[22]            ; regout           ;
+; |D_clock|divided:inst4|CNT[21]            ; |D_clock|divided:inst4|CNT[21]            ; regout           ;
+; |D_clock|divided:inst4|CNT[20]            ; |D_clock|divided:inst4|CNT[20]            ; regout           ;
+; |D_clock|divided:inst4|CNT[19]            ; |D_clock|divided:inst4|CNT[19]            ; regout           ;
+; |D_clock|divided:inst4|CNT[18]            ; |D_clock|divided:inst4|CNT[18]            ; regout           ;
+; |D_clock|divided:inst4|CNT[17]            ; |D_clock|divided:inst4|CNT[17]            ; regout           ;
+; |D_clock|divided:inst4|CNT[16]            ; |D_clock|divided:inst4|CNT[16]            ; regout           ;
+; |D_clock|divided:inst4|CNT[15]            ; |D_clock|divided:inst4|CNT[15]            ; regout           ;
+; |D_clock|divided:inst4|CNT[14]            ; |D_clock|divided:inst4|CNT[14]            ; regout           ;
+; |D_clock|divided:inst4|CNT[13]            ; |D_clock|divided:inst4|CNT[13]            ; regout           ;
+; |D_clock|divided:inst4|CNT[12]            ; |D_clock|divided:inst4|CNT[12]            ; regout           ;
+; |D_clock|divided:inst4|CNT[11]            ; |D_clock|divided:inst4|CNT[11]            ; regout           ;
+; |D_clock|divided:inst4|CNT[10]            ; |D_clock|divided:inst4|CNT[10]            ; regout           ;
+; |D_clock|divided:inst4|CNT[9]             ; |D_clock|divided:inst4|CNT[9]             ; regout           ;
+; |D_clock|divided:inst4|op_1~37            ; |D_clock|divided:inst4|op_1~37            ; sumout           ;
+; |D_clock|divided:inst4|op_1~37            ; |D_clock|divided:inst4|op_1~38            ; cout             ;
+; |D_clock|divided:inst4|op_1~41            ; |D_clock|divided:inst4|op_1~41            ; sumout           ;
+; |D_clock|divided:inst4|op_1~41            ; |D_clock|divided:inst4|op_1~42            ; cout             ;
+; |D_clock|divided:inst4|op_1~45            ; |D_clock|divided:inst4|op_1~45            ; sumout           ;
+; |D_clock|divided:inst4|op_1~45            ; |D_clock|divided:inst4|op_1~46            ; cout             ;
+; |D_clock|divided:inst4|op_1~49            ; |D_clock|divided:inst4|op_1~49            ; sumout           ;
+; |D_clock|divided:inst4|op_1~49            ; |D_clock|divided:inst4|op_1~50            ; cout             ;
+; |D_clock|divided:inst4|op_1~53            ; |D_clock|divided:inst4|op_1~53            ; sumout           ;
+; |D_clock|divided:inst4|op_1~53            ; |D_clock|divided:inst4|op_1~54            ; cout             ;
+; |D_clock|divided:inst4|op_1~57            ; |D_clock|divided:inst4|op_1~57            ; sumout           ;
+; |D_clock|divided:inst4|op_1~57            ; |D_clock|divided:inst4|op_1~58            ; cout             ;
+; |D_clock|divided:inst4|op_1~61            ; |D_clock|divided:inst4|op_1~61            ; sumout           ;
+; |D_clock|divided:inst4|op_1~61            ; |D_clock|divided:inst4|op_1~62            ; cout             ;
+; |D_clock|divided:inst4|op_1~65            ; |D_clock|divided:inst4|op_1~65            ; sumout           ;
+; |D_clock|divided:inst4|op_1~65            ; |D_clock|divided:inst4|op_1~66            ; cout             ;
+; |D_clock|divided:inst4|op_1~69            ; |D_clock|divided:inst4|op_1~69            ; sumout           ;
+; |D_clock|divided:inst4|op_1~69            ; |D_clock|divided:inst4|op_1~70            ; cout             ;
+; |D_clock|divided:inst4|op_1~73            ; |D_clock|divided:inst4|op_1~73            ; sumout           ;
+; |D_clock|divided:inst4|op_1~73            ; |D_clock|divided:inst4|op_1~74            ; cout             ;
+; |D_clock|divided:inst4|op_1~77            ; |D_clock|divided:inst4|op_1~77            ; sumout           ;
+; |D_clock|divided:inst4|op_1~77            ; |D_clock|divided:inst4|op_1~78            ; cout             ;
+; |D_clock|divided:inst4|op_1~81            ; |D_clock|divided:inst4|op_1~81            ; sumout           ;
+; |D_clock|divided:inst4|op_1~81            ; |D_clock|divided:inst4|op_1~82            ; cout             ;
+; |D_clock|divided:inst4|op_1~85            ; |D_clock|divided:inst4|op_1~85            ; sumout           ;
+; |D_clock|divided:inst4|op_1~85            ; |D_clock|divided:inst4|op_1~86            ; cout             ;
+; |D_clock|divided:inst4|op_1~89            ; |D_clock|divided:inst4|op_1~89            ; sumout           ;
+; |D_clock|divided:inst4|op_1~89            ; |D_clock|divided:inst4|op_1~90            ; cout             ;
+; |D_clock|divided:inst4|op_1~93            ; |D_clock|divided:inst4|op_1~93            ; sumout           ;
+; |D_clock|cout60_v:inst1|tmpa~16           ; |D_clock|cout60_v:inst1|tmpa~16           ; combout          ;
+; |D_clock|cout12_v:inst|tmpa[0]            ; |D_clock|cout12_v:inst|tmpa[0]            ; regout           ;
+; |D_clock|cout12_v:inst|tmpa[1]            ; |D_clock|cout12_v:inst|tmpa[1]            ; regout           ;
+; |D_clock|cout12_v:inst|tmpa[2]            ; |D_clock|cout12_v:inst|tmpa[2]            ; regout           ;
+; |D_clock|cout12_v:inst|tmpa[3]            ; |D_clock|cout12_v:inst|tmpa[3]            ; regout           ;
+; |D_clock|seven_v:inst9|Mux0~5             ; |D_clock|seven_v:inst9|Mux0~5             ; combout          ;
+; |D_clock|seven_v:inst9|Mux1~6             ; |D_clock|seven_v:inst9|Mux1~6             ; combout          ;
+; |D_clock|seven_v:inst9|Mux2~6             ; |D_clock|seven_v:inst9|Mux2~6             ; combout          ;
+; |D_clock|seven_v:inst9|Mux3~6             ; |D_clock|seven_v:inst9|Mux3~6             ; combout          ;
+; |D_clock|seven_v:inst9|Mux4~6             ; |D_clock|seven_v:inst9|Mux4~6             ; combout          ;
+; |D_clock|seven_v:inst9|Mux5~0             ; |D_clock|seven_v:inst9|Mux5~0             ; combout          ;
+; |D_clock|seven_v:inst9|Mux6~6             ; |D_clock|seven_v:inst9|Mux6~6             ; combout          ;
+; |D_clock|cout12_v:inst|tmpb               ; |D_clock|cout12_v:inst|tmpb               ; regout           ;
+; |D_clock|cout60_v:inst1|tmpa[1]           ; |D_clock|cout60_v:inst1|tmpa[1]           ; regout           ;
+; |D_clock|cout60_v:inst1|tmpa[2]           ; |D_clock|cout60_v:inst1|tmpa[2]           ; regout           ;
+; |D_clock|cout60_v:inst1|tmpa[3]           ; |D_clock|cout60_v:inst1|tmpa[3]           ; regout           ;
+; |D_clock|seven_v:inst7|Mux0~5             ; |D_clock|seven_v:inst7|Mux0~5             ; combout          ;
+; |D_clock|seven_v:inst7|Mux1~6             ; |D_clock|seven_v:inst7|Mux1~6             ; combout          ;
+; |D_clock|seven_v:inst7|Mux2~6             ; |D_clock|seven_v:inst7|Mux2~6             ; combout          ;
+; |D_clock|seven_v:inst7|Mux3~6             ; |D_clock|seven_v:inst7|Mux3~6             ; combout          ;
+; |D_clock|seven_v:inst7|Mux4~6             ; |D_clock|seven_v:inst7|Mux4~6             ; combout          ;
+; |D_clock|seven_v:inst7|Mux5~0             ; |D_clock|seven_v:inst7|Mux5~0             ; combout          ;
+; |D_clock|seven_v:inst7|Mux6~6             ; |D_clock|seven_v:inst7|Mux6~6             ; combout          ;
+; |D_clock|cout60_v:inst1|tmpb[1]           ; |D_clock|cout60_v:inst1|tmpb[1]           ; regout           ;
+; |D_clock|cout60_v:inst1|tmpb[2]           ; |D_clock|cout60_v:inst1|tmpb[2]           ; regout           ;
+; |D_clock|seven_v:inst8|Mux0~5             ; |D_clock|seven_v:inst8|Mux0~5             ; combout          ;
+; |D_clock|seven_v:inst8|Mux1~6             ; |D_clock|seven_v:inst8|Mux1~6             ; combout          ;
+; |D_clock|seven_v:inst8|Mux2~6             ; |D_clock|seven_v:inst8|Mux2~6             ; combout          ;
+; |D_clock|seven_v:inst8|Mux3~6             ; |D_clock|seven_v:inst8|Mux3~6             ; combout          ;
+; |D_clock|seven_v:inst8|Mux4~6             ; |D_clock|seven_v:inst8|Mux4~6             ; combout          ;
+; |D_clock|seven_v:inst8|Mux5~0             ; |D_clock|seven_v:inst8|Mux5~0             ; combout          ;
+; |D_clock|seven_v:inst8|Mux6~6             ; |D_clock|seven_v:inst8|Mux6~6             ; combout          ;
+; |D_clock|cout60_v:inst2|tmpa[1]           ; |D_clock|cout60_v:inst2|tmpa[1]           ; regout           ;
+; |D_clock|cout60_v:inst2|tmpa[2]           ; |D_clock|cout60_v:inst2|tmpa[2]           ; regout           ;
+; |D_clock|cout60_v:inst2|tmpa[3]           ; |D_clock|cout60_v:inst2|tmpa[3]           ; regout           ;
+; |D_clock|seven_v:inst5|Mux0~5             ; |D_clock|seven_v:inst5|Mux0~5             ; combout          ;
+; |D_clock|seven_v:inst5|Mux1~6             ; |D_clock|seven_v:inst5|Mux1~6             ; combout          ;
+; |D_clock|seven_v:inst5|Mux2~6             ; |D_clock|seven_v:inst5|Mux2~6             ; combout          ;
+; |D_clock|seven_v:inst5|Mux3~6             ; |D_clock|seven_v:inst5|Mux3~6             ; combout          ;
+; |D_clock|seven_v:inst5|Mux4~6             ; |D_clock|seven_v:inst5|Mux4~6             ; combout          ;
+; |D_clock|seven_v:inst5|Mux5~0             ; |D_clock|seven_v:inst5|Mux5~0             ; combout          ;
+; |D_clock|seven_v:inst5|Mux6~6             ; |D_clock|seven_v:inst5|Mux6~6             ; combout          ;
+; |D_clock|cout60_v:inst2|tmpb[1]           ; |D_clock|cout60_v:inst2|tmpb[1]           ; regout           ;
+; |D_clock|cout60_v:inst2|tmpb[2]           ; |D_clock|cout60_v:inst2|tmpb[2]           ; regout           ;
+; |D_clock|seven_v:inst6|Mux0~5             ; |D_clock|seven_v:inst6|Mux0~5             ; combout          ;
+; |D_clock|seven_v:inst6|Mux1~6             ; |D_clock|seven_v:inst6|Mux1~6             ; combout          ;
+; |D_clock|seven_v:inst6|Mux2~6             ; |D_clock|seven_v:inst6|Mux2~6             ; combout          ;
+; |D_clock|seven_v:inst6|Mux3~6             ; |D_clock|seven_v:inst6|Mux3~6             ; combout          ;
+; |D_clock|seven_v:inst6|Mux4~6             ; |D_clock|seven_v:inst6|Mux4~6             ; combout          ;
+; |D_clock|seven_v:inst6|Mux5~0             ; |D_clock|seven_v:inst6|Mux5~0             ; combout          ;
+; |D_clock|seven_v:inst6|Mux6~6             ; |D_clock|seven_v:inst6|Mux6~6             ; combout          ;
+; |D_clock|cout60_v:inst2|tmpa~12           ; |D_clock|cout60_v:inst2|tmpa~12           ; combout          ;
+; |D_clock|cout60_v:inst2|tmpa[2]~13        ; |D_clock|cout60_v:inst2|tmpa[2]~13        ; combout          ;
+; |D_clock|cout60_v:inst2|tmpa~14           ; |D_clock|cout60_v:inst2|tmpa~14           ; combout          ;
+; |D_clock|cout60_v:inst2|tmpa~15           ; |D_clock|cout60_v:inst2|tmpa~15           ; combout          ;
+; |D_clock|cout60_v:inst2|Add1~0            ; |D_clock|cout60_v:inst2|Add1~0            ; combout          ;
+; |D_clock|cout60_v:inst2|tmpa~16           ; |D_clock|cout60_v:inst2|tmpa~16           ; combout          ;
+; |D_clock|cout60_v:inst2|tmpb~12           ; |D_clock|cout60_v:inst2|tmpb~12           ; combout          ;
+; |D_clock|cout60_v:inst2|tmpb~13           ; |D_clock|cout60_v:inst2|tmpb~13           ; combout          ;
+; |D_clock|cout60_v:inst2|tmpb[0]~14        ; |D_clock|cout60_v:inst2|tmpb[0]~14        ; combout          ;
+; |D_clock|cout60_v:inst2|tmpb~15           ; |D_clock|cout60_v:inst2|tmpb~15           ; combout          ;
+; |D_clock|cout60_v:inst2|tmpb~16           ; |D_clock|cout60_v:inst2|tmpb~16           ; combout          ;
+; |D_clock|cout60_v:inst1|tmpb~12           ; |D_clock|cout60_v:inst1|tmpb~12           ; combout          ;
+; |D_clock|cout60_v:inst1|tmpb~13           ; |D_clock|cout60_v:inst1|tmpb~13           ; combout          ;
+; |D_clock|cout60_v:inst1|tmpb~15           ; |D_clock|cout60_v:inst1|tmpb~15           ; combout          ;
+; |D_clock|cout60_v:inst2|RCO~4             ; |D_clock|cout60_v:inst2|RCO~4             ; combout          ;
+; |D_clock|cout60_v:inst1|tmpa[0]~12        ; |D_clock|cout60_v:inst1|tmpa[0]~12        ; combout          ;
+; |D_clock|cout60_v:inst1|tmpb[1]~16        ; |D_clock|cout60_v:inst1|tmpb[1]~16        ; combout          ;
+; |D_clock|cout60_v:inst1|tmpa~13           ; |D_clock|cout60_v:inst1|tmpa~13           ; combout          ;
+; |D_clock|cout60_v:inst1|tmpa~14           ; |D_clock|cout60_v:inst1|tmpa~14           ; combout          ;
+; |D_clock|cout60_v:inst1|tmpa[0]~15        ; |D_clock|cout60_v:inst1|tmpa[0]~15        ; combout          ;
+; |D_clock|cout60_v:inst1|RCO~4             ; |D_clock|cout60_v:inst1|RCO~4             ; combout          ;
+; |D_clock|cout12_v:inst|Equal0~0           ; |D_clock|cout12_v:inst|Equal0~0           ; combout          ;
+; |D_clock|cout12_v:inst|tmpb~5             ; |D_clock|cout12_v:inst|tmpb~5             ; combout          ;
+; |D_clock|cout12_v:inst|tmpa~16            ; |D_clock|cout12_v:inst|tmpa~16            ; combout          ;
+; |D_clock|cout12_v:inst|tmpa~17            ; |D_clock|cout12_v:inst|tmpa~17            ; combout          ;
+; |D_clock|cout12_v:inst|tmpa~18            ; |D_clock|cout12_v:inst|tmpa~18            ; combout          ;
+; |D_clock|cout12_v:inst|tmpa[0]~19         ; |D_clock|cout12_v:inst|tmpa[0]~19         ; combout          ;
+; |D_clock|divided:inst4|_~37               ; |D_clock|divided:inst4|_~37               ; combout          ;
+; |D_clock|divided:inst4|_~38               ; |D_clock|divided:inst4|_~38               ; combout          ;
+; |D_clock|divided:inst4|_~39               ; |D_clock|divided:inst4|_~39               ; combout          ;
+; |D_clock|divided:inst4|_~40               ; |D_clock|divided:inst4|_~40               ; combout          ;
+; |D_clock|divided:inst4|_~41               ; |D_clock|divided:inst4|_~41               ; combout          ;
+; |D_clock|divided:inst4|_~42               ; |D_clock|divided:inst4|_~42               ; combout          ;
+; |D_clock|cout12_v:inst|tmpa[0]~20         ; |D_clock|cout12_v:inst|tmpa[0]~20         ; combout          ;
+; |D_clock|cout12_v:inst|tmpa[1]~21         ; |D_clock|cout12_v:inst|tmpa[1]~21         ; combout          ;
+; |D_clock|cout60_v:inst1|tmpa[0]~_wirecell ; |D_clock|cout60_v:inst1|tmpa[0]~_wirecell ; combout          ;
+; |D_clock|cout60_v:inst1|tmpb[0]~_wirecell ; |D_clock|cout60_v:inst1|tmpb[0]~_wirecell ; combout          ;
+; |D_clock|cout60_v:inst2|tmpa[0]~_wirecell ; |D_clock|cout60_v:inst2|tmpa[0]~_wirecell ; combout          ;
+; |D_clock|cout60_v:inst2|tmpb[0]~_wirecell ; |D_clock|cout60_v:inst2|tmpb[0]~_wirecell ; combout          ;
+; |D_clock|QHa[0]                           ; |D_clock|QHa[0]                           ; padio            ;
+; |D_clock|QHa[1]                           ; |D_clock|QHa[1]                           ; padio            ;
+; |D_clock|QHa[2]                           ; |D_clock|QHa[2]                           ; padio            ;
+; |D_clock|QHa[3]                           ; |D_clock|QHa[3]                           ; padio            ;
+; |D_clock|QHa[4]                           ; |D_clock|QHa[4]                           ; padio            ;
+; |D_clock|QHa[5]                           ; |D_clock|QHa[5]                           ; padio            ;
+; |D_clock|QHa[6]                           ; |D_clock|QHa[6]                           ; padio            ;
+; |D_clock|QHb[0]                           ; |D_clock|QHb[0]                           ; padio            ;
+; |D_clock|QHb[1]                           ; |D_clock|QHb[1]                           ; padio            ;
+; |D_clock|QHb[2]                           ; |D_clock|QHb[2]                           ; padio            ;
+; |D_clock|QHb[3]                           ; |D_clock|QHb[3]                           ; padio            ;
+; |D_clock|QHb[4]                           ; |D_clock|QHb[4]                           ; padio            ;
+; |D_clock|QHb[5]                           ; |D_clock|QHb[5]                           ; padio            ;
+; |D_clock|QHb[6]                           ; |D_clock|QHb[6]                           ; padio            ;
+; |D_clock|QMa[0]                           ; |D_clock|QMa[0]                           ; padio            ;
+; |D_clock|QMa[1]                           ; |D_clock|QMa[1]                           ; padio            ;
+; |D_clock|QMa[2]                           ; |D_clock|QMa[2]                           ; padio            ;
+; |D_clock|QMa[3]                           ; |D_clock|QMa[3]                           ; padio            ;
+; |D_clock|QMa[4]                           ; |D_clock|QMa[4]                           ; padio            ;
+; |D_clock|QMa[5]                           ; |D_clock|QMa[5]                           ; padio            ;
+; |D_clock|QMa[6]                           ; |D_clock|QMa[6]                           ; padio            ;
+; |D_clock|QMb[0]                           ; |D_clock|QMb[0]                           ; padio            ;
+; |D_clock|QMb[1]                           ; |D_clock|QMb[1]                           ; padio            ;
+; |D_clock|QMb[2]                           ; |D_clock|QMb[2]                           ; padio            ;
+; |D_clock|QMb[3]                           ; |D_clock|QMb[3]                           ; padio            ;
+; |D_clock|QMb[4]                           ; |D_clock|QMb[4]                           ; padio            ;
+; |D_clock|QMb[5]                           ; |D_clock|QMb[5]                           ; padio            ;
+; |D_clock|QMb[6]                           ; |D_clock|QMb[6]                           ; padio            ;
+; |D_clock|QSa[0]                           ; |D_clock|QSa[0]                           ; padio            ;
+; |D_clock|QSa[1]                           ; |D_clock|QSa[1]                           ; padio            ;
+; |D_clock|QSa[2]                           ; |D_clock|QSa[2]                           ; padio            ;
+; |D_clock|QSa[3]                           ; |D_clock|QSa[3]                           ; padio            ;
+; |D_clock|QSa[4]                           ; |D_clock|QSa[4]                           ; padio            ;
+; |D_clock|QSa[5]                           ; |D_clock|QSa[5]                           ; padio            ;
+; |D_clock|QSa[6]                           ; |D_clock|QSa[6]                           ; padio            ;
+; |D_clock|QSb[0]                           ; |D_clock|QSb[0]                           ; padio            ;
+; |D_clock|QSb[1]                           ; |D_clock|QSb[1]                           ; padio            ;
+; |D_clock|QSb[2]                           ; |D_clock|QSb[2]                           ; padio            ;
+; |D_clock|QSb[3]                           ; |D_clock|QSb[3]                           ; padio            ;
+; |D_clock|QSb[4]                           ; |D_clock|QSb[4]                           ; padio            ;
+; |D_clock|QSb[5]                           ; |D_clock|QSb[5]                           ; padio            ;
+; |D_clock|QSb[6]                           ; |D_clock|QSb[6]                           ; padio            ;
+; |D_clock|LDN                              ; |D_clock|LDN~corein                       ; combout          ;
+; |D_clock|divided:inst4|CNT[24]~clkctrl    ; |D_clock|divided:inst4|CNT[24]~clkctrl    ; outclk           ;
+; |D_clock|cout60_v:inst1|tmpa~14DUPLICATE  ; |D_clock|cout60_v:inst1|tmpa~14DUPLICATE  ; combout          ;
+; |D_clock|cout60_v:inst1|tmpa[1]~DUPLICATE ; |D_clock|cout60_v:inst1|tmpa[1]~DUPLICATE ; regout           ;
++-------------------------------------------+-------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
+    Info: Processing started: Thu May 31 11:37:30 2018
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off D_clock -c D_clock
+Info: Using vector source file "D:/Backup/ÎÒµÄÎÄµµ/QuartusII/D_clock/D_clock.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      19.21 %
+Info: Number of transitions in simulation is 21926
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 119 megabytes
+    Info: Processing ended: Thu May 31 11:37:31 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

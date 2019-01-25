@@ -1,0 +1,25 @@
+subdesign demulti4_1
+(
+	S[2..0], I[3..0]: input;
+	SA[3..0], SB[2..0], MA[3..0], MB[2..0], HA[3..0], HB: output;
+)
+begin
+case S[] is
+	when 0 => 
+		SA[3..0] = I[3..0];
+	when 1 =>
+		SB[2..0] = I[2..0];
+	when 2 =>
+		MA[3..0] = I[3..0];
+	when 3 =>
+		MB[2..0] = I[2..0];
+	when 4 =>
+		MA[3..0] = I[3..0];
+	when 5 =>
+		HB = I[0];
+	when others =>
+		SA[3..0] = 0; SB[2..0] = 0;
+		MA[3..0] = 0; MB[2..0] = 0;
+		HA[3..0] = 0; HB = gnd;
+end case;
+end;

@@ -1,0 +1,15 @@
+subdesign divided
+(
+CLKI: input;
+CLKO: output;
+)
+variable CNT[24..0]: DFF;
+begin
+CNT[].CLK = CLKI;
+if CNT[] == 19999999 then
+CNT[] = 0;
+else
+CNT[] = CNT[] + 1;
+end if;
+CLKO = CNT[24];
+end;
